@@ -1,9 +1,11 @@
 # pizza-sales-Report-Dashboard
 Dashboard Link :
+
 (https://github.com/Sripradasr/pizza-sales-Report-Dashboard/blob/main/pizza%20sales%20Dashboard%20home.png)
 (https://github.com/Sripradasr/pizza-sales-Report-Dashboard/blob/main/pizza%20sales%20Dashboard.png)
  
  Problem Statement
+ 
  This dashboard helps the Pizza Sales understand their customers better. It helps the Sales Report know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the Average Order Values, Total Revenue, Total Pizza Sold, Total orders and Average Pizza Per Orders, thus since by using this dashboard they have identified this report, they can further work on factors responsible for the Sales.
  
 Since, number of Total Revenue($817.9k),Average Order Values(38.31),Total Pizza Sold(50K), Total orders(21k), Average Pizza For order(2.32)
@@ -196,6 +198,45 @@ Avg Pizzas per order = [TOTAL PIZZAS SOLD]/[TOTAL ORDERS]
 -Step 32 : Ratings Visual was used to represent different ratings mentioned below,
 
 
+A. KPI’s
+
+B. Daily Trend for Total Orders
+
+C. Monthly Trend for Orders
+
+D. % of Sales by Pizza Category
+
+E. % of Sales by Pizza Size
+
+F. Total Pizzas Sold by Pizza Category
+
+G. Top 5 Pizzas by Revenue
+
+H. Bottom 5 Pizzas by Revenue
+
+I. Top 5 Pizzas by Quantity
+
+J. Bottom 5 Pizzas by Quantity
+
+K. Top 5 Pizzas by Total Orders
+
+L. Borrom 5 Pizzas by Total Orders
+
+Insights
+A single page report was created on Power BI Desktop.
+
+Snapshot of Dashboard (Power BI DESTOP)
+
+![pizza sales Dashboard home](https://github.com/user-attachments/assets/8158812f-99e5-4105-b5b5-e95ff946e8d2)
+
+
+
+
+
+
+
+
+![pizza sales Dashboard](https://github.com/user-attachments/assets/cbe071b9-1d57-4968-9327-1ea02a445143)
 
 
 
