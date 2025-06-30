@@ -105,7 +105,104 @@ Step 13 : Bottom 5 Pizzas by Revenue
 
 SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue FROM pizza_sales GROUP BY pizza_name ORDER BY Total_Revenue ASC
 
-snap 12 :
+snap 12 : 
+
+![image](https://github.com/user-attachments/assets/d79e9338-8500-46e8-86c8-0090fe453616)
+
+
+
+Step 14 : Top 5 Pizzas by Quantity
+
+SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold FROM pizza_sales GROUP BY pizza_name ORDER BY Total_Pizza_Sold DESC
+
+snap 13 :
+
+![image](https://github.com/user-attachments/assets/b001d26e-a1fc-453c-8822-c5cab7de8eaf)
+
+
+
+Step 15 : Bottom 5 Pizzas by Quantity
+
+SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold FROM pizza_sales GROUP BY pizza_name ORDER BY Total_Pizza_Sold ASC
+
+snap 14 : 
+![image](https://github.com/user-attachments/assets/cef281e8-f871-4f31-99f4-8ce774ac3281)
+
+
+Step 16 : Top 5 Pizzas by Total Orders
+
+SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales GROUP BY pizza_name ORDER BY Total_Orders DESC
+
+snap 15 :
+
+![image](https://github.com/user-attachments/assets/095f069b-6374-4a86-bd12-374a63aed3eb)
+
+
+Step 17 : Borrom 5 Pizzas by Total Orders
+
+SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales GROUP BY pizza_name ORDER BY Total_Orders ASC
+
+snap 16 :
+
+![image](https://github.com/user-attachments/assets/0ddf9c66-23cc-41a0-a044-2799239a6d1c)
+
+
+Steps followed
+
+-Step 18 : Now Load data into Power BI Desktop, dataset is a csv file and connect to mysql.
+
+-Step 19 : New measure was created to Average Order Values.
+
+Following DAX expression Average Order Values
+
+Average Order Values = [TOTAL REVENUE]/[TOTAL ORDERS] Total Revenue, Total Pizza Sold, Total oeders and Average Pizza Per Orders.
+
+-Step 20 : New measure was created to Total Pizza Sold
+
+Following DAX expression Total Pizza Sold
+
+Total Pizza Sold = SUM( pizza sales[QUALITY])
+
+-Step 21 : New measure was created to Total orders
+
+Following DAX expression Total orders
+
+TOTAL ORDERS = DISTINTCOUNT(pizza_sales[ORDER_ID])
+
+-Step 22 : New measure was created to Avg Pizzas per order
+
+Following DAX expression Avg Pizzas per order
+
+Avg Pizzas per order = [TOTAL PIZZAS SOLD]/[TOTAL ORDERS]
+
+-Step 23 = Although, Add New Card Data Visualization drag the Data Average Order Values, Total Pizza Sold, Total orders Average Pizza Per Orders and Total Revenue and format the KPI's.
+
+-Step 24 = A bar chart was also added to the report design area Order day/Total orders representing the Daily Trend for Total Orders.
+
+-Step 25 = Area Chart was added to the report design Total Orders by order month area representing the Month_Name and total_orders.
+
+-Step 26 = Donut Chart was added to the report design Pizza category/total revenue representing the % of sales by Pizza Categories.
+
+-Step 27 = Donut Chart was added to the report design Pizza Size/total revenue representing the % of sales by Pizza Size.
+
+-Step 28 = Funnel Chart was added to the report design Pizza Category/Total Pizza Sold representing the Total Pizza Sold by Pizza Categories
+
+-Step 29 = Bar Chart was added to the report design Pizza Name/Total Revenue Sold representing the Top 5 Pizzas by Revenue and Bottom 5 Pizzas by Revenue
+
+-Step 30 = Bar Chart was added to the report design Pizza Name/ Total_Pizza_Sold representing the Top 5 Pizzas by Total Orders and Bottom 5 Pizzas by Total Orders
+
+-Step 31 = Bar Chart was added to the report design Pizza Name/ Total_Pizza_Sold Sold representing the Top 5 Pizzas by Quantity and Bottom 5 Pizzas by Quantity
+
+-Step 32 : Ratings Visual was used to represent different ratings mentioned below,
+
+
+
+
+
+
+
+
+
 
 
 
